@@ -1,0 +1,23 @@
+{
+  "name": "config-helper",
+  "version": "0.0.1",
+  "description": "Environment config helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "keywords": [
+    "config",
+    "utils",
+    "utility"
+  ],
+  "author": "blaz <blaz@menems.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/menems/config-helper.git"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
