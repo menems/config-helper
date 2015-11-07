@@ -4,7 +4,9 @@
   "description": "Environment config helper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require should",
+    "test-cov": "istanbul cover _mocha -- --require should --bail",
+    "test-travis": "istanbul cover _mocha --report lcovonly -- --require should --bail"
   },
   "keywords": [
     "config",
@@ -19,5 +21,11 @@
   },
   "engines": {
     "node": ">= 4"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "extend": "^3.0.0"
   }
 }
