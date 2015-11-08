@@ -1,4 +1,11 @@
 
+v1.0.2 / 2015-11-08
+===================
+
+  * fix: remove automatic port from config + add debug
+  * chrore: add Readme, travis and istanbul
+  * feat: add default config path
+
 v1.0.1 / 2015-11-07
 ===================
 
