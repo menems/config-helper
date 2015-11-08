@@ -7,8 +7,9 @@ const extend = require('extend');
 
 module.exports = (dir, multi) => {
 
-    if (!dir) throw new Error('dir is required');
+    dir = dir || './config';
 
+    dir = path.resolve(dir);
     let stat = fs.statSync(dir);
     if (!stat.isDirectory()) throw new Error('dir must be a directory')
 
