@@ -20,7 +20,7 @@ module.exports = (dir, multi) => {
     if (multi) {
         stat = fs.statSync(config_path);
         fs.readdirSync(config_path)
-            .filter( f => path.extname(f) === '.js')
+            .filter( f => /\.js|\.coffee|\.json/.test(path.extname(f)))
             .forEach( f => {
                 const file = path.join(config_path, f);
                 debug('add %s', file);

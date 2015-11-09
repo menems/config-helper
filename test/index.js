@@ -31,11 +31,12 @@ describe('config-helper', () => {
         c.should.have.property('name');
         done();
     });
-    it('should be ok with multi conf', done => {
+    it('should be ok with multi conf, json and js file', done => {
         process.env.NODE_ENV='test';
         const c = configHelper(multiple, true);
         c.should.have.property('name');
-        c.should.have.property('pouet');
+        c.should.have.property('deux');
+        c.should.have.property('env');
         done();
     });
 });
