@@ -11,7 +11,7 @@ module.exports = (dir, multi) => {
 
     dir = path.resolve(dir);
     let stat = fs.statSync(dir);
-    if (!stat.isDirectory()) throw new Error('dir must be a directory')
+    if (!stat.isDirectory()) throw new Error('config root must be a directory')
 
     const env = process.env.NODE_ENV || 'development';
     const config_path = path.join(dir, env);
