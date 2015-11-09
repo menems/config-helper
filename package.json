@@ -1,6 +1,6 @@
 {
   "name": "config-helper",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Environment config helper",
   "main": "index.js",
   "scripts": {

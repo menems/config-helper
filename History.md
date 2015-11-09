@@ -1,4 +1,10 @@
 
+v1.1.0 / 2015-11-09
+===================
+
+  * chore: add npm-debug.log gitignore
+  * feat: add coffe and json support
+
 v1.0.3 / 2015-11-09
 ===================
 
