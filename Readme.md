@@ -24,7 +24,9 @@ config/
 ```
 
 ```javascript
-const config = require('config-helper')();
+const config = require('config-helper')({
+    path: 'config/'
+});
 ```
 
 ## Multi usage
@@ -33,14 +35,17 @@ const config = require('config-helper')();
 path/config/
 	developement/
 		core.js
-		database.js
+		database.json
 		...
 	test/
 	production/
 ```
 
 ```javascript
-const config = require('config-helper')('./path/config', true);
+const config = require('config-helper')({
+    path :'path/config',
+    multi :true
+});
 ```
 
 [node-image]: https://img.shields.io/node/v/config-helper.svg?style=flat-square
